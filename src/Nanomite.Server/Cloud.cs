@@ -9,7 +9,8 @@ namespace Nanomite.Server
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Nanomite.Server.Base;
-    using Nanomite.Server.Handler;
+    using Nanomite.Server.Base.Locator;
+    using Nanomite.Server.Base.Handler;
     using Nanomite.Server.Helper;
     using System;
     using System.IO;
@@ -117,7 +118,7 @@ namespace Nanomite.Server
                 Logger.Initialize(config.SrcDeviceId);
                 CommonBaseHandler.OnLog = (sender, msg, level) => { Logger.Log(sender, msg, level); };
 
-                // Run Cloud (instrument / onPrem or azure) 
+                // Run Cloud
                 new Task(async () =>
                 {
                     await RunningCloud.Start(config);

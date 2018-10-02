@@ -1,4 +1,10 @@
-﻿namespace Nanomite.Server.Base
+﻿///-----------------------------------------------------------------
+///   File:         ICloud.cs
+///   Author:   	Andre Laskawy           
+///   Date:         30.09.2018 18:44:01
+///-----------------------------------------------------------------
+
+namespace Nanomite.Server.Base
 {
     using System.Net;
     using System.Threading.Tasks;
@@ -17,11 +23,9 @@
         /// <summary>
         /// Starts the specified cloud endpoint.
         /// </summary>
-        /// <param name="connectToOnPremiseCloud">
-        /// if set to <c>true</c> [connect to on premise cloud].
-        /// </param>
+        /// <param name="config">The config<see cref="IConfig"/></param>
         /// <returns>The <see cref="Task"/></returns>
-        Task Start(IConfig config, bool connectToOnPremiseCloud = true);
+        Task Start(IConfig config);
 
         /// <summary>
         /// Gets the cloud address.

@@ -13,7 +13,7 @@ namespace Nanomite.Server
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    using Nanomite.Server.Base;
+    using Nanomite.Server.Base.Locator;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Serialization;
 

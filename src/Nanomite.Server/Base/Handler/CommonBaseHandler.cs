@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 17:08:24
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Handler
+namespace Nanomite.Server.Base.Handler
 {
     using NLog;
     using System;
