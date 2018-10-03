@@ -4,12 +4,12 @@
 ///   Date:         30.09.2018 18:21:12
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base.Worker
+namespace Nanomite.Core.Server.Base.Worker
 {
     using Google.Protobuf;
     using Google.Protobuf.WellKnownTypes;
-    using Nanomite.Server.Base.Handler;
-    using Nanomite.Services.Network.Grpc;
+    using Nanomite.Core.Server.Base.Handler;
+    using Nanomite.Core.Network.Grpc;
     using NLog;
     using System;
     using System.Collections.Generic;

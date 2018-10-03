@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 16:59:56
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server
+namespace Nanomite.Core.Server
 {
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;

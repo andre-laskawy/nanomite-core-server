@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 18:44:02
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base
+namespace Nanomite.Core.Server.Base
 {
     /// <summary>
     /// Defines the <see cref="IConfig"/>

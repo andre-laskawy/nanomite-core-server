@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 18:46:38
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Helper
+namespace Nanomite.Core.Server.Helper
 {
     using Microsoft.IdentityModel.Tokens;
     using System;

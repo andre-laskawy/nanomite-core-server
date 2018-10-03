@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 18:44:01
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base
+namespace Nanomite.Core.Server.Base
 {
     using System.Net;
     using System.Threading.Tasks;

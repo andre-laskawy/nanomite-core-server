@@ -4,10 +4,10 @@
 ///   Date:         30.09.2018 18:21:13
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base.Worker
+namespace Nanomite.Core.Server.Base.Worker
 {
     using Grpc.Core;
-    using Nanomite.Services.Network.Grpc;
+    using Nanomite.Core.Network.Grpc;
     using System.Threading.Tasks;
 
     /// <summary>

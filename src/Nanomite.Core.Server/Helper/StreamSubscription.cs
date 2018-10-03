@@ -4,10 +4,10 @@
 ///   Date:         30.09.2018 18:46:45
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Helper
+namespace Nanomite.Core.Server.Helper
 {
-    using Nanomite.Services.Network.Common;
-    using Nanomite.Services.Network.Grpc;
+    using Nanomite.Core.Network.Common;
+    using Nanomite.Core.Network.Grpc;
     using System.Collections.Generic;
 
     /// <summary>

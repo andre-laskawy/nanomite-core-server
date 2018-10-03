@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 16:59:48
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server
+namespace Nanomite.Core.Server
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Cors.Infrastructure;
@@ -13,7 +13,7 @@ namespace Nanomite.Server
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    using Nanomite.Server.Base.Locator;
+    using Nanomite.Core.Server.Base.Locator;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Serialization;
 

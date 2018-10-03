@@ -4,7 +4,7 @@
 ///   Date:         30.09.2018 16:46:57
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Helper
+namespace Nanomite.Core.Server.Helper
 {
     using System;
 

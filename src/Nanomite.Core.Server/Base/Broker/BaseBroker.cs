@@ -4,9 +4,9 @@
 ///   Date:         30.09.2018 18:21:20
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base.Broker
+namespace Nanomite.Core.Server.Base.Broker
 {
-    using Nanomite.Server.Base.Worker;
+    using Nanomite.Core.Server.Base.Worker;
     using System.Linq;
     using System.Net;
     using System.Net.Sockets;

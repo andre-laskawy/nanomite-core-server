@@ -4,14 +4,14 @@
 ///   Date:         30.09.2018 17:00:15
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server
+namespace Nanomite.Core.Server
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
-    using Nanomite.Server.Base;
-    using Nanomite.Server.Base.Locator;
-    using Nanomite.Server.Base.Handler;
-    using Nanomite.Server.Helper;
+    using Nanomite.Core.Server.Base;
+    using Nanomite.Core.Server.Base.Locator;
+    using Nanomite.Core.Server.Base.Handler;
+    using Nanomite.Core.Server.Helper;
     using System;
     using System.IO;
     using System.Net;

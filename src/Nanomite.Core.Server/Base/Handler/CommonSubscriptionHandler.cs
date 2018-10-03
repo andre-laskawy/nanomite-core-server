@@ -4,14 +4,12 @@
 ///   Date:         30.09.2018 18:47:43
 ///-----------------------------------------------------------------
 
-namespace Nanomite.Server.Base.Handler
+namespace Nanomite.Core.Server.Base.Handler
 {
-    using Nanomite.Server.Base.Handler;
-    using Nanomite.Server.Helper;
-    using Nanomite.Services.Network;
-    using Nanomite.Services.Network.Common;
-    using Nanomite.Services.Network.Grpc;
-    using NLog;
+    using Nanomite.Core.Server.Helper;
+    using Nanomite.Core.Network;
+    using Nanomite.Core.Network.Common;
+    using Nanomite.Core.Network.Grpc;
     using System.Collections.Concurrent;
     using System.Collections.Generic;
     using System.Linq;
@@ -145,7 +143,7 @@ namespace Nanomite.Server.Base.Handler
         {
             foreach (var s in streams)
             {
-                CommonBaseHandler.Log(typeof(CommonSubscriptionHandler).ToString(), "Forward package to stream of: " + s.UserId, LogLevel.Trace);
+                CommonBaseHandler.Log(typeof(CommonSubscriptionHandler).ToString(), "Forward package to stream of: " + s.UserId, NLog.LogLevel.Trace);
                 s.Stream.AddToQueue(cmd);
             }
         }
