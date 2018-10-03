@@ -48,25 +48,6 @@ namespace Nanomite.Core.Server
         /// <param name="services">Collection of services</param>
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add mvc middleware.
-            services.AddMvc().AddApplicationPart(CloudLocator.GetCloud().GetType().Assembly).AddControllersAsServices();
-
-            // Add framework services.
-            services.AddMvc().AddJsonOptions(opt =>
-            {
-                // ref loops
-                opt.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
-                opt.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.Objects;
-
-                // Workaround: Ensure that the JSON is not camel cased by default
-                var resolver = opt.SerializerSettings.ContractResolver;
-                if (resolver != null)
-                {
-                    var res = resolver as DefaultContractResolver;
-                    res.NamingStrategy = null;
-                }
-            });
-
             // Add CORS
             var corsBuilder = new CorsPolicyBuilder();
             corsBuilder.AllowAnyHeader();

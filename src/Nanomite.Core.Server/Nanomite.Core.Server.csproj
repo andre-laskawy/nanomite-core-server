@@ -9,6 +9,8 @@
     <Version>$(VersionSemantic)</Version>
     <IsPackable>true</IsPackable>
     <OutputType>Library</OutputType>
+    <ApplicationIcon />
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <Import Project="SourceLink.csproj.include" />
