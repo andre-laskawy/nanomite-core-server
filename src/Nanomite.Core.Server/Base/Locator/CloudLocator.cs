@@ -46,7 +46,7 @@ namespace Nanomite.Core.Server.Base.Locator
         public static void Locate(string customPath = null)
         {
             string binPath = customPath ?? Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            foreach (string dll in Directory.GetFiles(binPath, "Nanomite.Core.Server.*.dll", SearchOption.TopDirectoryOnly))
+            foreach (string dll in Directory.GetFiles(binPath, "Nanomite.Server.*.dll", SearchOption.TopDirectoryOnly))
             {
                 try
                 {

@@ -9,11 +9,11 @@ namespace Nanomite.Core.Server.Base.Worker
     using Google.Protobuf;
     using Google.Protobuf.WellKnownTypes;
     using Nanomite.Core.Server.Base.Handler;
-    using Nanomite.Core.Network.Grpc;
     using NLog;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Nanomite.Core.Network.Common;
 
     /// <summary>
     /// Defines the <see cref="CommonBaseWorker"/>

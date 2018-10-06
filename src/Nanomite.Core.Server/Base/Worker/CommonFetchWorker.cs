@@ -7,7 +7,7 @@
 namespace Nanomite.Core.Server.Base.Worker
 {
     using Grpc.Core;
-    using Nanomite.Core.Network.Grpc;
+    using Nanomite.Core.Network.Common;
     using System.Threading.Tasks;
 
     /// <summary>
