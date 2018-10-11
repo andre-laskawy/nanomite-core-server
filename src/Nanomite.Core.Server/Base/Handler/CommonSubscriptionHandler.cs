@@ -14,6 +14,7 @@ namespace Nanomite.Core.Server.Base.Handler
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using System;
 
     /// <summary>
     /// Defines the <see cref="CommonSubscriptionHandler"/>
@@ -80,6 +81,7 @@ namespace Nanomite.Core.Server.Base.Handler
         {
             if (!string.IsNullOrEmpty(topic))
             {
+                new Func<bool>( () => subscriptions.ContainsKey(streamId)).AwaitResult(5);
                 StreamSubscription subscriptionStream = subscriptions[streamId];
                 if (!subscriptionStream.Topics.Contains(topic))
                 {
@@ -95,7 +97,7 @@ namespace Nanomite.Core.Server.Base.Handler
         /// <param name="topic">The topic.</param>
         public static void UnsubscribeFromTopic(string streamId, string topic)
         {
-            if (!string.IsNullOrEmpty(topic))
+            if (!string.IsNullOrEmpty(topic) && subscriptions.ContainsKey(streamId))
             {
                 StreamSubscription subscriptionStream = subscriptions[streamId];
                 if (subscriptionStream.Topics.Contains(topic))
